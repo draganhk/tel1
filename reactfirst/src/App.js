@@ -79,7 +79,7 @@ class App extends React.Component {
     const isValidDays = this.state.message;
 
     let star, valid, err;
-    star = isCheckedIn ? "*" : "";
+    star = isCheckedIn ? "" : "*";
     valid = isValidEmail ? "" : "Please enter valid email address.";
     err = isValidDays ? "Your days of availability are not specified!" : "";
 
