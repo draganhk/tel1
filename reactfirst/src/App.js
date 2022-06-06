@@ -93,28 +93,28 @@ class App extends React.Component {
           <div>
             Full Name* :&nbsp;
             <input type="text" name="fullname" value={this.state.fullname}
-            onChange={this.handleChange} required></input>
-            &nbsp;<span className="Text-red" name="fullname-valid">{strFullNameValid}</span>
+            data-testid="fullname" onChange={this.handleChange} required></input>
+            &nbsp;<span className="Text-red" name="fullname-valid" data-testid="fullname-valid">{strFullNameValid}</span>
           </div>
           <div>
             Email Address :&nbsp;
             <input type="text" name="email" value={this.state.email}
-            onChange={this.handleChange}></input>
-            &nbsp;<span className="Text-red" name="email-valid">{strEmailValid}</span>
+            data-testid="email" onChange={this.handleChange}></input>
+            &nbsp;<span className="Text-red" name="email-valid" data-testid="email-valid">{strEmailValid}</span>
           </div>
           <div>
             Flexible :&nbsp;
             <input type="checkbox" name="flexible" value={this.state.flexible}
-            onChange={this.handleChange}></input>
+            data-testid="flexible" onChange={this.handleChange}></input>
           </div>
           <div>
             Days of Availability {bIsCheckedIn ? "" : "*"}:&nbsp;
             <input name="days" value={this.state.days}
-            onChange={this.handleChange} required={bIsCheckedIn}></input>
-            &nbsp;<span className="Text-red" name="days-valid">{strDaysValid}</span>
+            data-testid="days" onChange={this.handleChange} required={bIsCheckedIn}></input>
+            &nbsp;<span className="Text-red" name="days-valid" data-testid="days-valid">{strDaysValid}</span>
           </div>
           <div>
-            <button type="submit" onClick={this.handleSubmit}>Save</button>
+            <button type="submit" data-testid="save" onClick={this.handleSubmit}>Save</button>
           </div>
       </header>
     </div>
