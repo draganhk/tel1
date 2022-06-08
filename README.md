@@ -2,7 +2,7 @@
 
 ## Instructions
 1. This assignment must be completed in 72 hours or less after receiving it from HR.
-Please submit your answers to joseph.yap@telusinternational.com
+Please submit your answers to ---
 2. For part 1 of UI testing no styling is required. The purpose of the form is a case for
 unit tests. So, please keep your implementation as simple as enough.
 3. The result of the assessment should be uploaded in the git repository over
